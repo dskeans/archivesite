@@ -1,30 +1,62 @@
+
 body {
-    font-family: 'Futura', sans-serif;
-    background: #f0f4f8;
-    color: #333;
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    flex-direction: column;
 }
-header {
-    background: linear-gradient(to right, navy, gold);
-    color: white;
-    padding: 1rem;
+
+.container {
     text-align: center;
 }
-.arch {
-    font-variant: small-caps;
+
+#hive-logo {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/Hexagon_icon.svg') no-repeat center/contain;
 }
-.hive {
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+
+.orbit {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f0c420;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin: -5px 0 0 -5px;
 }
-main {
-    padding: 2rem;
+
+.orbit1 {
+    animation: rotate1 3s linear infinite;
 }
-.signup, .specs, .vision {
-    margin-bottom: 2rem;
-    background: white;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+
+.orbit2 {
+    animation: rotate2 5s linear infinite;
+}
+
+.orbit3 {
+    animation: rotate3 7s linear infinite;
+}
+
+@keyframes rotate1 {
+    0% { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
+
+@keyframes rotate2 {
+    0% { transform: rotate(0deg) translateX(45px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(45px) rotate(-360deg); }
+}
+
+@keyframes rotate3 {
+    0% { transform: rotate(0deg) translateX(75px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(75px) rotate(-360deg); }
 }
