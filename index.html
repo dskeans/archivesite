@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arcHIVE | DocuMINT Platform</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Futura', sans-serif;
+      background: linear-gradient(#001F3F, #00509E);
+      color: white;
+    }
+    header {
+      background: #000E2F;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-variant: small-caps;
+    }
+    .highlight {
+      color: gold;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .form-container input, .form-container textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: none;
+      border-radius: 4px;
+    }
+    .form-container button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: gold;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span class="highlight">arc</span>HIVE</h1>
+    <p>Preserve the Truth. Tokenize the Moment.</p>
+  </header>
+
+  <section id="vision">
+    <h2>Vision and Purpose</h2>
+    <p>
+      arcHIVE is a blockchain-powered recording platform that captures, verifies,
+      and archives moments that matter. With our DocuMINT module, every photo or
+      video is timestamped, hashed, stored on IPFS, and optionally minted as a
+      token to prove origin and integrity.
+    </p>
+  </section>
+
+  <section id="specs">
+    <h2>Product Specs</h2>
+    <ul>
+      <li>5" capacitive touchscreen</li>
+      <li>Raspberry Pi 4B based architecture</li>
+      <li>Embedded camera and microphone</li>
+      <li>WiFi & Bluetooth with cryptographic ESP32 security chip</li>
+      <li>OLED feedback display for recording state</li>
+      <li>Supports IPFS uploads, metadata QR generation, and smart contract minting</li>
+    </ul>
+  </section>
+
+  <section id="signup">
+    <h2>Sign Up to Learn More</h2>
+    <form class="form-container">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message (optional):</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Join the Waitlist</button>
+    </form>
+  </section>
+
+  <footer style="text-align:center; padding:1rem; background:#000E2F;">
+    <small>&copy; 2025 arcHIVE Systems. All rights reserved.</small>
+  </footer>
+</body>
+</html>
