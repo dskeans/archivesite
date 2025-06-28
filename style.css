@@ -31,3 +31,29 @@
     <li><strong style="color: #00aaff;">On-Chain Ledger of Attribution</strong> – Every capture is logged to a blockchain ledger, enabling permanent and verifiable authorship.</li>
   </ul>
 </div>
+/* Tabs Navigation Styles */
+.tab-buttons {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.tab-button {
+  background: #eee;
+  border: none;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background: #ccc;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content#overview {
+  display: block;
+}

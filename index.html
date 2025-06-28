@@ -1,20 +1,31 @@
-<div id="global-mint-count" style="font-size: 1.5em; font-weight: bold; margin-top: 20px;">
-  Total Verified Files: <span id="mint-count">Loading...</span>
-</div>
-<div style="background: linear-gradient(100deg, #0066ff, #00ccff); padding: 60px 0; transform: skewY(-3deg); margin-bottom: -40px;">
-  <div style="transform: skewY(3deg); text-align: center;">
-    <div style="font-family: sans-serif; font-size: 48px; font-weight: bold; color: #0b2447; background: white; display: inline-block; padding: 10px 30px; border-radius: 6px;">
-      ARC<span style="color: #0066ff;">HIVE</span>
-      <span style="display: inline-block; transform: rotate(-10deg); color: yellow; font-size: 28px; position: relative; top: -20px; left: -10px;">▃</span>
-    </div>
-    <p style="margin-top: 20px; font-size: 20px; color: white;">
-      Don’t let the past fade to black.<br />
-      Make it known it happened.<br />
-      And let the world see.
-    </p>
+<div class="tabs">
+  <div class="tab-buttons">
+    <button class="tab-button active" data-tab="overview">Overview</button>
+    <button class="tab-button" data-tab="audiences">Audiences</button>
+    <button class="tab-button" data-tab="stats">Stats</button>
   </div>
-</div>
-<section style="display: flex; justify-content: space-between; align-items: stretch; text-align: left; margin: 80px auto; background-color: #000c1f; padding: 60px 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); color: white; max-width: 1200px;">
+
+  <div class="tab-content" id="overview">
+    <div id="global-mint-count" style="font-size: 1.5em; font-weight: bold; margin-top: 20px;">
+      Total Verified Files: <span id="mint-count">Loading...</span>
+    </div>
+    <div style="background: linear-gradient(100deg, #0066ff, #00ccff); padding: 60px 0; transform: skewY(-3deg); margin-bottom: -40px;">
+      <div style="transform: skewY(3deg); text-align: center;">
+        <div style="font-family: sans-serif; font-size: 48px; font-weight: bold; color: #0b2447; background: white; display: inline-block; padding: 10px 30px; border-radius: 6px;">
+          ARC<span style="color: #0066ff;">HIVE</span>
+          <span style="display: inline-block; transform: rotate(-10deg); color: yellow; font-size: 28px; position: relative; top: -20px; left: -10px;">▃</span>
+        </div>
+        <p style="margin-top: 20px; font-size: 20px; color: white;">
+          Don’t let the past fade to black.<br />
+          Make it known it happened.<br />
+          And let the world see.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="audiences" style="display: none;">
+    <section style="display: flex; justify-content: space-between; align-items: stretch; text-align: left; margin: 80px auto; background-color: #000c1f; padding: 60px 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); color: white; max-width: 1200px;">
   <div style="width: 50%; display: flex; flex-direction: column; justify-content: center; padding-right: 20px;">
     <h2 style="color: #00aaff; font-size: 2rem; margin-bottom: 10px;">Use Case Scenarios: Real-World Tasks & Transparent Origins</h2>
     <hr style="border: none; height: 2px; background-color: #00aaff; width: 40%; margin-bottom: 20px;" />
@@ -145,58 +156,62 @@
     <img src="image.png" alt="arcHIVE Camera" style="max-height: 100%; max-width: 100%; height: auto; border-radius: 6px;" />
   </div>
 
-</section>
-
-<section style="background-color: #0b0b1e; color: white; padding: 60px 40px; margin: 80px auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); max-width: 1200px;">
-  <h2 style="color: #00aaff; font-size: 2rem; margin-bottom: 20px;">Why Tokenize? And Why Now?</h2>
-  <p style="line-height: 1.7; font-size: 1.1rem;">
-    In an age where AI can clone a voice or generate a face in seconds, the line between truth and fiction is blurrier than ever. Deepfakes aren’t just a curiosity—they’re a threat to public trust, journalism, and identity itself.
-  </p>
-  <p style="line-height: 1.7; font-size: 1.1rem; margin-top: 20px;">
-    For streamers, creators, and journalists, tokenization means more than ownership—it means traceability. With blockchain-based authentication, your work carries an unforgeable signature that says, "This is real. This is mine."
-  </p>
-  <p style="line-height: 1.7; font-size: 1.1rem; margin-top: 20px;">
-    Think of it as a manifesto for media integrity: a declaration that what you captured, created, or broadcast wasn’t just content—it was truth, and arcHIVE makes sure it stays that way.
-  </p>
-</section>
-<section style="background-color: #000c1f; color: white; padding: 60px 40px; margin: 80px auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); max-width: 1200px;">
-  <h2 style="color: #00aaff; font-size: 2rem; margin-bottom: 30px;">Defining Truth in the Disinformation Age</h2>
-
-  <div style="display: flex; flex-direction: column; gap: 30px;">
-
-    <blockquote style="font-style: italic; border-left: 4px solid #00aaff; padding-left: 16px;">
-      “We are moving from the Information Age to the Disinformation Age.”<br />
-      <span style="color: #00aaff;">— Nina Schick, author of “Deepfakes: The Coming Infocalypse”</span>
-    </blockquote>
-
-    <blockquote style="font-style: italic; border-left: 4px solid #00aaff; padding-left: 16px;">
-      “The camera used to never lie. Now, it always might.”<br />
-      <span style="color: #00aaff;">— Kevin Roose, NYT columnist</span>
-    </blockquote>
-
-    <blockquote style="font-style: italic; border-left: 4px solid #00aaff; padding-left: 16px;">
-      “Truth is no longer decided by what happened, but by what people *believe* happened.”<br />
-      <span style="color: #00aaff;">— Yuval Noah Harari</span>
-    </blockquote>
-
-    <blockquote style="font-style: italic; border-left: 4px solid #00aaff; padding-left: 16px;">
-      “In the age of AI-generated content, authenticity is the new scarcity.”<br />
-      <span style="color: #00aaff;">— The Atlantic, 2024</span>
-    </blockquote>
-
-    <div style="margin-top: 40px;">
-      <h3 style="color: #00ccff;">📊 Key Stats</h3>
-      <ul style="line-height: 1.8; padding-left: 1.2rem;">
-        <li>🔍 <strong style="color: #00aaff;">63%</strong> of Americans say they have difficulty distinguishing between what is real and what is fake in digital media. <em>(Pew Research, 2023)</em></li>
-        <li>🎥 <strong style="color: #00aaff;">500,000+</strong> videos online are estimated to be AI-generated with no attribution. <em>(MIT Media Lab, 2024)</em></li>
-        <li>⚖️ <strong style="color: #00aaff;">1 in 3</strong> believe deepfakes could influence elections or public policy. <em>(Brookings Institution, 2023)</em></li>
-        <li>📉 <strong style="color: #00aaff;">26%</strong> trust national news organizations—lowest in 50 years. <em>(Reuters Institute, 2023)</em></li>
-      </ul>
-    </div>
+    </section>
   </div>
-</section>
 
-</section>
+  <div class="tab-content" id="stats" style="display: none;">
+    <section style="background-color: #0b0b1e; color: white; padding: 60px 40px; margin: 80px auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); max-width: 1200px;">
+      <h2 style="color: #00aaff; font-size: 2rem; margin-bottom: 20px;">Why Tokenize? And Why Now?</h2>
+      <p style="line-height: 1.7; font-size: 1.1rem;">
+        In an age where AI can clone a voice or generate a face in seconds, the line between truth and fiction is blurrier than ever. Deepfakes aren’t just a curiosity—they’re a threat to public trust, journalism, and identity itself.
+      </p>
+      <p style="line-height: 1.7; font-size: 1.1rem; margin-top: 20px;">
+        For streamers, creators, and journalists, tokenization means more than ownership—it means traceability. With blockchain-based authentication, your work carries an unforgeable signature that says, "This is real. This is mine."
+      </p>
+      <p style="line-height: 1.7; font-size: 1.1rem; margin-top: 20px;">
+        Think of it as a manifesto for media integrity: a declaration that what you captured, created, or broadcast wasn’t just content—it was truth, and arcHIVE makes sure it stays that way.
+      </p>
+    </section>
+    <section style="background-color: #000c1f; color: white; padding: 60px 40px; margin: 80px auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); max-width: 1200px;">
+      <h2 style="color: #00aaff; font-size: 2rem; margin-bottom: 30px;">Defining Truth in the Disinformation Age</h2>
+
+      <div style="display: flex; flex-direction: column; gap: 30px;">
+
+        <blockquote style="font-style: italic; border-left: 4px solid #00aaff; padding-left: 16px;">
+          “We are moving from the Information Age to the Disinformation Age.”<br />
+          <span style="color: #00aaff;">— Nina Schick, author of “Deepfakes: The Coming Infocalypse”</span>
+        </blockquote>
+
+        <blockquote style="font-style: italic; border-left: 4px solid #00aaff; padding-left: 16px;">
+          “The camera used to never lie. Now, it always might.”<br />
+          <span style="color: #00aaff;">— Kevin Roose, NYT columnist</span>
+        </blockquote>
+
+        <blockquote style="font-style: italic; border-left: 4px solid #00aaff; padding-left: 16px;">
+          “Truth is no longer decided by what happened, but by what people *believe* happened.”<br />
+          <span style="color: #00aaff;">— Yuval Noah Harari</span>
+        </blockquote>
+
+        <blockquote style="font-style: italic; border-left: 4px solid #00aaff; padding-left: 16px;">
+          “In the age of AI-generated content, authenticity is the new scarcity.”<br />
+          <span style="color: #00aaff;">— The Atlantic, 2024</span>
+        </blockquote>
+
+        <!-- Key Stats block: visually prominent, as requested -->
+        <div style="margin-top: 2em;">
+          <h2 style="font-size: 2em; margin-bottom: 0.5em;">📊 Key Stats</h2>
+          <ul style="font-size: 1.2em; line-height: 1.6;">
+            <li>🔍 63% of Americans say they have difficulty distinguishing between what is real and what is fake in digital media. (Pew Research, 2023)</li>
+            <li>🎥 500,000+ videos online are estimated to be AI-generated with no attribution. (MIT Media Lab, 2024)</li>
+            <li>⚖️ 1 in 3 believe deepfakes could influence elections or public policy. (Brookings Institution, 2023)</li>
+            <li>📉 26% trust national news organizations—lowest in 50 years. (Reuters Institute, 2023)</li>
+          </ul>
+        </div>
+        <!-- End Key Stats block -->
+      </div>
+    </section>
+  </div>
+</div>
 
 <script>
   fetch('https://raw.githubusercontent.com/dskeans/archivesite/main/mintlog.json')
@@ -209,4 +224,15 @@
       console.error('Failed to load mintlog.json:', err);
       document.getElementById('mint-count').textContent = 'Unavailable';
     });
+</script>
+<script>
+  document.querySelectorAll('.tab-button').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
+      button.classList.add('active');
+      const target = button.getAttribute('data-tab');
+      document.getElementById(target).style.display = 'block';
+    });
+  });
 </script>
