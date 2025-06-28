@@ -51,7 +51,7 @@
 
 .tab-button.active {
   background-color: #00ccff;
-  color: #000c1f;
+  color: #0b2447;
   border: 2px solid #00ccff;
   box-shadow: 0 0 20px #00ccff;
 }
@@ -82,7 +82,7 @@
 
 .tab-button.active {
   background-color: #00ccff;
-  color: #000c1f;
+  color: #0b2447;
   box-shadow: 0 0 16px #00ccff;
 }
 

@@ -1,60 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Archive Site</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="parallax">
-    <div class="parallax-overlay">
-      <h1>arcHIVE</h1>
-      <p>Truth. Time-stamped. On-chain.</p>
-    </div>
-  </div>
-  <div class="tab-buttons">
-    <button class="tab-button active" onclick="showTab('overview')">Overview</button>
-    <button class="tab-button" onclick="showTab('manifesto')">Manifesto</button>
-    <button class="tab-button" onclick="showTab('key-stats')">Key Stats</button>
-    <button class="tab-button" onclick="showTab('tokenization')">Tokenization</button>
-  </div>
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #0b2447;
+  margin: 0;
+  padding: 0;
+}
 
-  <div class="tab-content" id="overview">
-    <h2>Welcome to arcHIVE</h2>
-    <p>arcHIVE is a cryptographic media authenticator and timestamping platform. We empower creators, journalists, and institutions to preserve digital truth with on-chain integrity.</p>
-  </div>
+/* Parallax Section */
+.parallax {
+  background-image: url('background.jpg');
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
-  <div class="tab-content" id="manifesto">
-    <h2 style="color:#0b2447">Defining Truth in the Disinformation Age</h2>
-    <p style="color:#0b2447">We believe media should be verifiable, traceable, and cryptographically linked to its creator and moment in time. Deepfakes, manipulation, and narrative distortion are not just tech problems—they're existential threats to democratic discourse.</p>
-  </div>
+.parallax-overlay {
+  background-color: rgba(11, 36, 71, 0.5);
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  <div class="tab-content" id="key-stats">
-    <h2>📊 Key Stats</h2>
-    <ul>
-      <li>🔍 63% of Americans say they have difficulty distinguishing between what is real and what is fake in digital media. <span class="source-citation">(Pew Research, 2023)</span></li>
-      <li>🎥 500,000+ videos online are estimated to be AI-generated with no attribution. <span class="source-citation">(MIT Media Lab, 2024)</span></li>
-      <li>⚖️ 1 in 3 believe deepfakes could influence elections or public policy. <span class="source-citation">(Brookings Institution, 2023)</span></li>
-      <li>📉 26% trust national news organizations—lowest in 50 years. <span class="source-citation">(Reuters Institute, 2023)</span></li>
-    </ul>
-  </div>
+/* Tab Buttons */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
 
-  <div class="tab-content" id="tokenization">
-    <h2>Creator Tokenization & Smart Contracts</h2>
-    <p>Each piece of content uploaded through arcHIVE is cryptographically hashed and linked to a creator wallet. Our smart contract system ensures transparent media ownership, royalties, and public provenance.</p>
-  </div>
+.tab-button {
+  background-color: transparent;
+  border: 2px solid #0b2447;
+  color: #0b2447;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-  <script>
-    function showTab(tabId) {
-      const tabs = document.querySelectorAll('.tab-content');
-      tabs.forEach(tab => tab.style.display = 'none');
-      document.getElementById(tabId).style.display = 'block';
+.tab-button.active,
+.tab-button:hover {
+  background-color: #0b2447;
+  color: #fff;
+}
 
-      const buttons = document.querySelectorAll('.tab-button');
-      buttons.forEach(btn => btn.classList.remove('active'));
-      event.currentTarget.classList.add('active');
-    }
-  </script>
-</body>
-</html>
+/* Tab Content */
+.tab-content {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+  display: none;
+  color: #0b2447;
+}
+
+/* Source Citation */
+.source-citation {
+  font-size: 0.9em;
+  color: #0b2447;
+}
+
+/* Shadows and outlines */
+h1, h2 {
+  text-shadow: 1px 1px 2px #0b2447;
+}
+
+button:focus {
+  outline: 2px solid #0b2447;
+  outline-offset: 2px;
+}
