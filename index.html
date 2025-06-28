@@ -1,78 +1,73 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #0b2447;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>arcHIVE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-/* Parallax Section */
-.parallax {
-  background-image: url('background.jpg');
-  height: 400px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+  <div class="top-banner">
+    The world’s first blockchain-powered archive for truth in the age of deepfakes.
+  </div>
 
-.parallax-overlay {
-  background-color: rgba(11, 36, 71, 0.5);
-  height: 100%;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  <section class="section-wrapper hero-message" style="text-align: center;">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem;">
+      <span style="color: #0b2447;">arc</span><span style="color: #f4c542;">HIVE</span>
+    </h1>
+    <h2>Don’t Let the Past Fade to Black.</h2>
+    <p>Capture it. Timestamp it. Preserve it forever on-chain.</p>
+  </section>
 
-/* Tab Buttons */
-.tab-buttons {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
+  <section class="section-wrapper" style="background-color: #e0ebf5; padding: 2rem 0;">
+    <h2 style="margin: 0; text-align: center;">Stay Connected</h2>
+    <p style="text-align: center; margin-top: 0.5rem;">Sign up to receive updates and join the arcHIVE community.</p>
+    <form action="https://script.google.com/macros/s/AKfycbyS_toKXqs14WYlJmQ5R32kJqS-o8Mg1gPNtqnrluVRs6rNvLdfbmObo452X4WpbcpP/exec" method="POST" style="max-width: 500px; margin: 0 auto; text-align: center;">
+      <input type="email" name="email" placeholder="Your email" required style="padding: 0.75rem; font-size: 1rem; width: 80%; border: 1px solid #ccc; border-radius: 4px;" />
+      <button type="submit" class="cta-button" style="margin-top: 1rem;">Sign Up</button>
+    </form>
+  </section>
 
-.tab-button {
-  background-color: transparent;
-  border: 2px solid #0b2447;
-  color: #0b2447;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin: 0 5px;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
-}
+  <section class="section-wrapper">
+    <h2>Digital Media Reality Check</h2>
+    <div class="stats-cards">
+      <div class="stat-card">
+        🔍 63% of Americans say they have difficulty distinguishing between what is real and what is fake in digital media.
+        <span class="source">(Pew Research, 2023)</span>
+      </div>
+      <div class="stat-card">
+        🎥 500,000+ videos online are estimated to be AI-generated with no attribution.
+        <span class="source">(MIT Media Lab, 2024)</span>
+      </div>
+      <div class="stat-card">
+        ⚖️ 1 in 3 believe deepfakes could influence elections or public policy.
+        <span class="source">(Brookings Institution, 2023)</span>
+      </div>
+      <div class="stat-card">
+        📉 26% trust national news organizations—lowest in 50 years.
+        <span class="source">(Reuters Institute, 2023)</span>
+      </div>
+    </div>
+  </section>
 
-.tab-button.active,
-.tab-button:hover {
-  background-color: #0b2447;
-  color: #fff;
-}
+  <section class="section-wrapper">
+    <h2>Our Purpose</h2>
+    <p>arcHIVE is built for those who preserve, protect, and publish the truth. Whether you're archiving oral histories or capturing real-time video evidence, arcHIVE gives you cryptographic proof and decentralized permanence.</p>
+    <p>We believe memory should be verifiable. From investigative journalism to citizen reporting, arcHIVE lets you timestamp and authenticate your original media. With rising concerns about AI-generated fakes, content manipulation, and media erasure, arcHIVE restores trust at the source.</p>
+    <p>Every photo, video, or audio clip you upload is hashed, published to IPFS, and optionally minted as a cryptographic asset — your digital fingerprint on the truth. It’s censorship-resistant, timestamped, and provable.</p>
+  </section>
 
-/* Tab Content */
-.tab-content {
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  padding: 0 20px;
-  display: none;
-  color: #0b2447;
-}
+  <section class="section-wrapper">
+    <h2>How It Works</h2>
+    <ol>
+      <li><strong>Capture:</strong> Use arcHIVE to record photo, video, or audio content.</li>
+      <li><strong>Hash:</strong> Your file’s fingerprint is calculated locally.</li>
+      <li><strong>Publish:</strong> File is uploaded to IPFS for decentralized storage.</li>
+      <li><strong>Mint:</strong> Optionally mint as a verifiable token tied to your wallet.</li>
+      <li><strong>Verify:</strong> Anyone can confirm your media’s origin and timestamp.</li>
+    </ol>
+  </section>
 
-/* Source Citation */
-.source-citation {
-  font-size: 0.9em;
-  color: #0b2447;
-}
-
-/* Shadows and outlines */
-h1, h2 {
-  text-shadow: 1px 1px 2px #0b2447;
-}
-
-button:focus {
-  outline: 2px solid #0b2447;
-  outline-offset: 2px;
-}
+</body>
+</html>
