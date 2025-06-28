@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,179 +6,103 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>arcHIVE</title>
   <style>
-    .blue-accent {
-      color: #4DA8DA;
+    body {
+      font-family: 'Futura', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f5f5f5 30%, #00bfff 30%);
+      color: white;
+      overflow-x: hidden;
     }
 
-    .blue-bg {
-      background-color: #0a192f;
+    #topBanner {
+      background-color: transparent;
+      color: black;
+      width: 100%;
+      padding: 40px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    #hiveTitle {
+      font-size: 2.5rem;
+      font-weight: normal;
+      color: #002b5c;
+      position: relative;
+      z-index: 2;
+    }
+
+    #hiveTitle .ark {
+      position: absolute;
+      width: 75px;
+      height: 20px;
+      background: yellow;
+      border-radius: 100px;
+      transform: rotate(-10deg);
+      left: 50%;
+      top: 45px;
+      margin-left: -75px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .ocean-line {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      background: linear-gradient(to right, #4DA8DA, #1e90ff, #4DA8DA);
+      clip-path: polygon(0 40%, 100% 0%, 100% 100%, 0% 100%);
+      z-index: 1;
+    }
+
+    .content {
+      padding-top: 200px;
+      text-align: center;
       color: white;
+      max-width: 800px;
+      margin: auto;
     }
 
     .image-box {
       max-width: 400px;
+      margin: 30px auto;
+      background-color: rgba(10, 25, 47, 0.85);
       border: 2px solid #4DA8DA;
       border-radius: 8px;
-      background-color: rgba(10, 25, 47, 0.85);
       padding: 10px;
-    }
-    body {
-      font-family: 'Futura', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-top: 0;
-      background: #0a192f;
-      color: white;
-      margin: 0;
-      overflow: hidden;
-    }
-    .ocean-line {
-      width: 100%;
-      height: 10px;
-      background: linear-gradient(to right, #4DA8DA, #1e90ff, #4DA8DA);
-      border-radius: 20% 20% 0 0;
-      margin-top: -10px;
-    }
-    #topBanner {
-      background-color: white;
-      color: black;
-      width: 100%;
-      padding: 40px 0;
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
-    #hiveTitle {
-      position: relative;
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: normal;
-    }
-    .hiveText {
-      position: relative;
-      z-index: 1;
-    }
-    #sparkContainer {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: visible;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    .spark {
-      position: absolute;
-      width: 4px;
-      height: 4px;
-      background: gold;
-      border-radius: 50%;
-      opacity: 0;
-      animation: flicker 2s infinite ease-in-out;
-    }
-
-    @keyframes flicker {
-      0%, 100% { opacity: 0; transform: scale(0.5); }
-      50% { opacity: 1; transform: scale(1.5); }
-    }
-    #whoFor {
-      background: url('https://images.unsplash.com/photo-1525186402429-b4ff38bed0d5?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    #whoFor h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    #whoFor p, #whoFor ul {
-      max-width: 800px;
-      margin: 0 auto 30px;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    #whoFor ul {
-      list-style: none;
-      padding: 0;
-    }
-    #whoFor li {
-      margin-bottom: 10px;
-    }
-    #whoFor p:last-child {
-      font-style: italic;
-      margin-top: 30px;
-    }
-    section {
-      padding: 80px 20px;
-      width: 100%;
-    }
-
-    h1, h2, h3 {
-      font-family: 'Futura', sans-serif;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      color: gold;
-      margin-top: 0;
     }
 
     h2 {
-      font-size: 2rem;
-      color: white;
-    }
-
-    h3 {
-      font-size: 1.5rem;
-      color: #f0f0f0;
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto 30px;
+      color: #4DA8DA;
     }
 
     ul {
-      font-size: 1rem;
-      max-width: 800px;
-      margin: 0 auto;
+      list-style: none;
+      padding: 0;
+      text-align: left;
     }
 
-    .section-light {
-      background-color: #1e1e1e;
-      color: white;
-    }
-
-    .section-dark {
-      background-color: #121212;
-      color: white;
+    li {
+      margin: 10px 0;
     }
   </style>
 </head>
 <body>
   <div id="topBanner">
     <div id="hiveTitle">
-      <span class="hiveText">
-        <span style="font-weight: normal;">arc</span>
-        <span style="font-weight: bold; background: gold; border-radius: 0 0 100% 100%; padding: 0 10px;">HIVE</span>
-      </span>
-      <div id="sparkContainer"></div>
+      <span style="font-weight: normal;">ARC</span><span style="font-weight: bold;">HIVE</span>
+      <div class="ark"></div>
     </div>
+    <div class="ocean-line"></div>
   </div>
-  <div class="ocean-line"></div>
-  <div style="max-width: 600px; margin-top: 30px; text-align: center;">
-    <p style="font-size: 1.1rem; line-height: 1.5;">
-      arcHIVE is a decentralized platform for capturing, verifying, and tokenizing your most important audiovisual documents. 
+
+  <div class="content">
+    <p>
+      arcHIVE is a decentralized platform for capturing, verifying, and tokenizing your most important audiovisual documents.
       With blockchain-backed authenticity, IPFS storage, and a built-in camera UI, your media stays secure, traceable, and future-proof.
     </p>
+
     <form style="margin-top: 20px;">
       <input type="email" placeholder="Enter your email" required
         style="padding: 10px; width: 70%; max-width: 300px; font-size: 1rem; border: none; border-radius: 4px;"/>
@@ -186,14 +111,13 @@
         Sign Up
       </button>
     </form>
-  </div>
-  <section id="whoFor" class="section-light">
-    <h2 class="blue-accent">Who It's For</h2>
-    <p>
-      arcHIVE is built for those who preserve, protect, and publish the truth. Whether you're archiving oral histories or capturing real-time video evidence, arcHIVE gives you cryptographic proof and decentralized permanence.
-    </p>
-    <div style="display: flex; justify-content: center; gap: 60px; align-items: flex-start;">
-      <ul style="text-align: left; flex: 1; max-width: 400px;">
+
+    <section>
+      <h2>Who It's For</h2>
+      <p>
+        arcHIVE is built for those who preserve, protect, and publish the truth. Whether you're archiving oral histories or capturing real-time video evidence, arcHIVE gives you cryptographic proof and decentralized permanence.
+      </p>
+      <ul>
         <li>📰 <strong>Journalists</strong> – to timestamp interviews, verify footage, and protect sources.</li>
         <li>📚 <strong>Librarians & Archivists</strong> – to safeguard digital collections with blockchain verifiability.</li>
         <li>🎥 <strong>Creators & Documentarians</strong> – to own and authenticate their original media.</li>
@@ -201,22 +125,13 @@
         <li>📂 <strong>Evidence Custodians</strong> – to ensure chain-of-custody and media integrity.</li>
         <li>🎙️ <strong>Educators & Historians</strong> – to preserve first-person accounts in immutable form.</li>
       </ul>
+
       <div class="image-box">
         <img src="image.png" alt="Line art of arcHIVE camera" style="width: 140%; border-radius: 4px; margin-left: -20%;"/>
       </div>
-    </div>
-    <p>If you care about what really happened — arcHIVE was built for you.</p>
-  </section>
+
+      <p>If you care about what really happened — arcHIVE was built for you.</p>
+    </section>
+  </div>
 </body>
-  <script>
-    const sparkContainer = document.getElementById('sparkContainer');
-    for (let i = 0; i < 30; i++) {
-      const spark = document.createElement('div');
-      spark.className = 'spark';
-      spark.style.top = Math.random() * 100 + '%';
-      spark.style.left = Math.random() * 100 + '%';
-      spark.style.animationDelay = (Math.random() * 4) + 's';
-      sparkContainer.appendChild(spark);
-    }
-  </script>
 </html>
