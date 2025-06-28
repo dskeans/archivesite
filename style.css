@@ -1,44 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-
-body {
-  background: #0c1828;
-  color: white;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 2.5em;
-  position: relative;
-  display: inline-block;
-  background: linear-gradient(to bottom, #ffffff 60%, #f2cb05 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.logo::before {
-  content: '';
-  position: absolute;
-  bottom: -0.3em;
-  left: 0;
-  width: 100%;
-  height: 0.2em;
-  background: #f2cb05;
-  border-radius: 100% 100% 0 0;
-}
-
-img[src*="camera"] {
-  width: 800px;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: 0;
-  display: block;
-}
-
-hr.section-divider {
-  border: none;
-  border-top: 4px solid #55acee;
-  border-radius: 999px;
-  margin: 40px auto;
-  width: 90%;
-}
+<div style="margin-top: 30px;">
+  <h3 style="color: #00aaff; font-size: 1.6rem; display: flex; align-items: center;">
+    <svg style="width: 32px; height: 32px; margin-right: 12px;" viewBox="0 0 24 24" fill="#00aaff" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 17.5c-4.14 0-7.5-3.36-7.5-7.5S7.86 4.5 12 4.5 19.5 7.86 19.5 12 16.14 19.5 12 19.5z"/></svg>
+    Public Accountability & Crisis Response
+  </h3>
+  <ul style="line-height: 1.8; padding-left: 1.2rem;">
+    <li><strong style="color: #00aaff;">Law Enforcement Monitoring</strong> – Record and verify police interactions, traffic stops, and public encounters with immutable transparency.</li>
+    <li><strong style="color: #00aaff;">Human Rights Documentation</strong> – Capture abuses, protests, or violations in volatile regions with cryptographically backed proof.</li>
+    <li><strong style="color: #00aaff;">Disaster Relief Coordination</strong> – Authenticate rescue footage, supply drops, and coordination logs during hurricanes, earthquakes, and wildfires.</li>
+  </ul>
+</div>
+<div style="margin-top: 30px;">
+  <h3 style="color: #00aaff; font-size: 1.6rem; display: flex; align-items: center;">
+    <svg style="width: 32px; height: 32px; margin-right: 12px;" viewBox="0 0 24 24" fill="#00aaff" xmlns="http://www.w3.org/2000/svg"><path d="M12 4C8.13 4 5 7.13 5 11s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7zm1 10h-2v-4h2v4zm0-6h-2V7h2v1z"/></svg>
+    Intellectual Property & Digital Rights
+  </h3>
+  <ul style="line-height: 1.8; padding-left: 1.2rem;">
+    <li><strong style="color: #00aaff;">Copyright Protection</strong> – Timestamp and tokenize original content to prove authorship and deter unauthorized use.</li>
+    <li><strong style="color: #00aaff;">Anti-Piracy Enforcement</strong> – Use blockchain-authenticated hashes to detect and flag unauthorized reproductions of digital assets.</li>
+    <li><strong style="color: #00aaff;">Royalty Attribution</strong> – Link creators to works via smart contracts for transparent, automated revenue distribution.</li>
+  </ul>
+</div>
+<div style="margin-top: 30px;">
+  <h3 style="color: #00aaff; font-size: 1.6rem; display: flex; align-items: center;">
+    <svg style="width: 32px; height: 32px; margin-right: 12px;" fill="#00aaff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm1 14h-2v-2h2v2zm0-4h-2V7h2v4z"/></svg>
+    Smart Contracts & Creator Wallets
+  </h3>
+  <ul style="line-height: 1.8; padding-left: 1.2rem;">
+    <li><strong style="color: #00aaff;">Creator Wallet Integration</strong> – Connect Ethereum-compatible wallets to assign and receive tokenized royalties from verified media.</li>
+    <li><strong style="color: #00aaff;">Automated Smart Contracts</strong> – Use programmable contracts to track usage, trigger royalty payments, or prove chain-of-ownership automatically.</li>
+    <li><strong style="color: #00aaff;">On-Chain Ledger of Attribution</strong> – Every capture is logged to a blockchain ledger, enabling permanent and verifiable authorship.</li>
+  </ul>
+</div>
