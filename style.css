@@ -32,32 +32,44 @@
   </ul>
 </div>
 /* Tabs Navigation Styles */
+/* Tabs Navigation Styles */
 .tab-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5em;
-  margin-top: 2em;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 4em;
+  padding-bottom: 4em;
 }
 
 .tab-button {
-  background: none;
-  border: none;
-  font-size: 2em;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: #007bff;
+  padding: 0.75em 2em;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-  text-decoration: underline;
-  transition: color 0.2s ease;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
 }
 
 .tab-button:hover {
-  color: #0056b3;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transform: scale(1.03);
 }
 
 .tab-button.active {
-  color: #003f7f;
-  text-decoration: none;
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #ffffff;
 }
 
 .tab-content {
