@@ -61,6 +61,82 @@
       0%, 100% { opacity: 0; transform: scale(0.5); }
       50% { opacity: 1; transform: scale(1.5); }
     }
+    #whoFor {
+      background: url('https://images.unsplash.com/photo-1525186402429-b4ff38bed0d5?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    #whoFor h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    #whoFor p, #whoFor ul {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    #whoFor ul {
+      list-style: none;
+      padding: 0;
+    }
+    #whoFor li {
+      margin-bottom: 10px;
+    }
+    #whoFor p:last-child {
+      font-style: italic;
+      margin-top: 30px;
+    }
+    section {
+      padding: 80px 20px;
+      width: 100%;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Futura', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: gold;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: white;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #f0f0f0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    ul {
+      font-size: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section-light {
+      background-color: #1e1e1e;
+      color: white;
+    }
+
+    .section-dark {
+      background-color: #121212;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -84,12 +160,12 @@
       </button>
     </form>
   </div>
-  <section style="background-color: #1e1e1e; color: white; padding: 60px 20px; width: 100%; text-align: center;">
-    <h2 style="font-size: 2rem; margin-bottom: 20px;">Who It's For</h2>
-    <p style="max-width: 800px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.6;">
+  <section id="whoFor" class="section-light">
+    <h2>Who It's For</h2>
+    <p>
       arcHIVE is built for those who preserve, protect, and publish the truth. Whether you're archiving oral histories or capturing real-time video evidence, arcHIVE gives you cryptographic proof and decentralized permanence.
     </p>
-    <ul style="list-style: none; padding: 0; max-width: 700px; margin: 0 auto; font-size: 1rem;">
+    <ul>
       <li>📰 <strong>Journalists</strong> – to timestamp interviews, verify footage, and protect sources.</li>
       <li>📚 <strong>Librarians & Archivists</strong> – to safeguard digital collections with blockchain verifiability.</li>
       <li>🎥 <strong>Creators & Documentarians</strong> – to own and authenticate their original media.</li>
@@ -97,7 +173,7 @@
       <li>📂 <strong>Evidence Custodians</strong> – to ensure chain-of-custody and media integrity.</li>
       <li>🎙️ <strong>Educators & Historians</strong> – to preserve first-person accounts in immutable form.</li>
     </ul>
-    <p style="margin-top: 30px; font-style: italic;">If you care about what really happened — arcHIVE was built for you.</p>
+    <p>If you care about what really happened — arcHIVE was built for you.</p>
   </section>
 </body>
   <script>
