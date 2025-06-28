@@ -1,4 +1,12 @@
 body {
-  background: radial-gradient(ellipse at center, #1CA9C9 0%, #0b2c48 80%, #010d1c 100%);
+  background: linear-gradient(to bottom, #0e3b56 0%, #04121f 100%);
   color: white;
+}
+
+img[src*="camera"] {
+  width: 450px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
 }
