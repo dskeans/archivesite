@@ -36,35 +36,38 @@
       position: relative;
       z-index: 1;
     }
-    #arcAnimation {
+    #sparkContainer {
       position: absolute;
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      border: 5px solid gold;
-      border-top-color: transparent;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      animation: orbit 4s linear infinite;
-      pointer-events: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: visible;
       z-index: 0;
+      pointer-events: none;
     }
-    @keyframes orbit {
-      from {
-        transform: rotate(0deg) translateX(30px) rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg) translateX(30px) rotate(-360deg);
-      }
+
+    .spark {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: gold;
+      border-radius: 50%;
+      opacity: 0;
+      animation: flicker 2s infinite ease-in-out;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 0; transform: scale(0.5); }
+      50% { opacity: 1; transform: scale(1.5); }
     }
   </style>
 </head>
 <body>
   <div id="topBanner">
     <div id="hiveTitle">
-      <span class="hiveText">arch<span style="font-weight: bold;">HIVE</span></span>
-      <div id="arcAnimation"></div>
+      <span class="hiveText"><span style="font-weight: normal;">arc</span><span style="font-weight: bold;">HIVE</span></span>
+      <div id="sparkContainer"></div>
     </div>
   </div>
   <div style="max-width: 600px; margin-top: 30px; text-align: center;">
@@ -81,5 +84,31 @@
       </button>
     </form>
   </div>
+  <section style="background-color: #1e1e1e; color: white; padding: 60px 20px; width: 100%; text-align: center;">
+    <h2 style="font-size: 2rem; margin-bottom: 20px;">Who It's For</h2>
+    <p style="max-width: 800px; margin: 0 auto 30px; font-size: 1.1rem; line-height: 1.6;">
+      arcHIVE is built for those who preserve, protect, and publish the truth. Whether you're archiving oral histories or capturing real-time video evidence, arcHIVE gives you cryptographic proof and decentralized permanence.
+    </p>
+    <ul style="list-style: none; padding: 0; max-width: 700px; margin: 0 auto; font-size: 1rem;">
+      <li>📰 <strong>Journalists</strong> – to timestamp interviews, verify footage, and protect sources.</li>
+      <li>📚 <strong>Librarians & Archivists</strong> – to safeguard digital collections with blockchain verifiability.</li>
+      <li>🎥 <strong>Creators & Documentarians</strong> – to own and authenticate their original media.</li>
+      <li>🏛️ <strong>Museum Curators</strong> – to provide verifiable provenance for digital exhibits.</li>
+      <li>📂 <strong>Evidence Custodians</strong> – to ensure chain-of-custody and media integrity.</li>
+      <li>🎙️ <strong>Educators & Historians</strong> – to preserve first-person accounts in immutable form.</li>
+    </ul>
+    <p style="margin-top: 30px; font-style: italic;">If you care about what really happened — arcHIVE was built for you.</p>
+  </section>
 </body>
+  <script>
+    const sparkContainer = document.getElementById('sparkContainer');
+    for (let i = 0; i < 30; i++) {
+      const spark = document.createElement('div');
+      spark.className = 'spark';
+      spark.style.top = Math.random() * 100 + '%';
+      spark.style.left = Math.random() * 100 + '%';
+      spark.style.animationDelay = (Math.random() * 4) + 's';
+      sparkContainer.appendChild(spark);
+    }
+  </script>
 </html>
