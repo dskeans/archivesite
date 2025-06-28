@@ -27,26 +27,28 @@
       position: relative;
     }
     #hiveTitle {
-      font-size: 2rem;
       position: relative;
-      text-transform: uppercase;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: normal;
     }
-    #arcAnchor {
+    .hiveText {
       position: relative;
-      display: inline-block;
+      z-index: 1;
     }
     #arcAnimation {
       position: absolute;
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
-      border: 4px solid gold;
+      border: 5px solid gold;
       border-top-color: transparent;
-      top: -20px;
-      left: calc(100% + 10px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       animation: orbit 4s linear infinite;
       pointer-events: none;
-      z-index: 2;
+      z-index: 0;
     }
     @keyframes orbit {
       from {
@@ -60,12 +62,9 @@
 </head>
 <body>
   <div id="topBanner">
-    <div id="hiveTitle" style="position: relative; text-align: center;">
+    <div id="hiveTitle">
+      <span class="hiveText">arch<span style="font-weight: bold;">HIVE</span></span>
       <div id="arcAnimation"></div>
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <span style="font-size: 1.2rem; text-transform: uppercase;">arch</span>
-        <span style="font-size: 2.2rem;">HIVE</span>
-      </div>
     </div>
   </div>
   <div style="max-width: 600px; margin-top: 30px; text-align: center;">
