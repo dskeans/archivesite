@@ -201,10 +201,10 @@
         <div style="margin-top: 2em;">
           <h2 style="font-size: 2em; margin-bottom: 0.5em;">📊 Key Stats</h2>
           <ul style="font-size: 1.2em; line-height: 1.6;">
-            <li>🔍 63% of Americans say they have difficulty distinguishing between what is real and what is fake in digital media. (Pew Research, 2023)</li>
-            <li>🎥 500,000+ videos online are estimated to be AI-generated with no attribution. (MIT Media Lab, 2024)</li>
-            <li>⚖️ 1 in 3 believe deepfakes could influence elections or public policy. (Brookings Institution, 2023)</li>
-            <li>📉 26% trust national news organizations—lowest in 50 years. (Reuters Institute, 2023)</li>
+            <li><span class="stat-number" data-target="63">0</span>% of Americans say they have difficulty distinguishing between what is real and what is fake in digital media. <a href="https://www.pewresearch.org/" target="_blank">(Pew Research, 2023)</a></li>
+            <li><span class="stat-number" data-target="500000">0</span>+ videos online are estimated to be AI-generated with no attribution. <a href="https://www.media.mit.edu/" target="_blank">(MIT Media Lab, 2024)</a></li>
+            <li>1 in 3 believe deepfakes could influence elections or public policy. <a href="https://www.brookings.edu/" target="_blank">(Brookings Institution, 2023)</a></li>
+            <li><span class="stat-number" data-target="26">0</span>% trust national news organizations—lowest in 50 years. <a href="https://reutersinstitute.politics.ox.ac.uk/" target="_blank">(Reuters Institute, 2023)</a></li>
           </ul>
         </div>
         <!-- End Key Stats block -->
@@ -235,4 +235,28 @@
       document.getElementById(target).style.display = 'block';
     });
   });
+</script>
+<script>
+  const animateNumbers = () => {
+    const numbers = document.querySelectorAll('.stat-number');
+    numbers.forEach(num => {
+      const target = +num.getAttribute('data-target');
+      let count = 0;
+      const step = Math.max(1, target / 100);
+
+      const update = () => {
+        count += step;
+        if (count >= target) {
+          num.textContent = target.toLocaleString();
+        } else {
+          num.textContent = Math.floor(count).toLocaleString();
+          requestAnimationFrame(update);
+        }
+      };
+      update();
+    });
+  };
+
+  const statsTabButton = document.querySelector('[data-tab="stats"]');
+  statsTabButton.addEventListener('click', animateNumbers, { once: true });
 </script>
