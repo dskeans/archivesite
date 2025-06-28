@@ -1,12 +1,19 @@
 body {
-  background: #0c192a;
+  background: #0b1522;
   color: white;
 }
 
 img[src*="camera"] {
-  width: 450px;
+  width: 600px;
   max-width: 100%;
   margin-left: auto;
   margin-right: 0;
   display: block;
+}
+
+hr.section-divider {
+  border: none;
+  border-top: 3px solid #55acee;
+  margin: 40px auto;
+  width: 80%;
 }
