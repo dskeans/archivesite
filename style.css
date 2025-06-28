@@ -1,36 +1,3 @@
-<div style="margin-top: 30px;">
-  <h3 style="color: #00aaff; font-size: 1.6rem; display: flex; align-items: center;">
-    <svg style="width: 32px; height: 32px; margin-right: 12px;" viewBox="0 0 24 24" fill="#00aaff" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 17.5c-4.14 0-7.5-3.36-7.5-7.5S7.86 4.5 12 4.5 19.5 7.86 19.5 12 16.14 19.5 12 19.5z"/></svg>
-    Public Accountability & Crisis Response
-  </h3>
-  <ul style="line-height: 1.8; padding-left: 1.2rem;">
-    <li><strong style="color: #00aaff;">Law Enforcement Monitoring</strong> – Record and verify police interactions, traffic stops, and public encounters with immutable transparency.</li>
-    <li><strong style="color: #00aaff;">Human Rights Documentation</strong> – Capture abuses, protests, or violations in volatile regions with cryptographically backed proof.</li>
-    <li><strong style="color: #00aaff;">Disaster Relief Coordination</strong> – Authenticate rescue footage, supply drops, and coordination logs during hurricanes, earthquakes, and wildfires.</li>
-  </ul>
-</div>
-<div style="margin-top: 30px;">
-  <h3 style="color: #00aaff; font-size: 1.6rem; display: flex; align-items: center;">
-    <svg style="width: 32px; height: 32px; margin-right: 12px;" viewBox="0 0 24 24" fill="#00aaff" xmlns="http://www.w3.org/2000/svg"><path d="M12 4C8.13 4 5 7.13 5 11s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7zm1 10h-2v-4h2v4zm0-6h-2V7h2v1z"/></svg>
-    Intellectual Property & Digital Rights
-  </h3>
-  <ul style="line-height: 1.8; padding-left: 1.2rem;">
-    <li><strong style="color: #00aaff;">Copyright Protection</strong> – Timestamp and tokenize original content to prove authorship and deter unauthorized use.</li>
-    <li><strong style="color: #00aaff;">Anti-Piracy Enforcement</strong> – Use blockchain-authenticated hashes to detect and flag unauthorized reproductions of digital assets.</li>
-    <li><strong style="color: #00aaff;">Royalty Attribution</strong> – Link creators to works via smart contracts for transparent, automated revenue distribution.</li>
-  </ul>
-</div>
-<div style="margin-top: 30px;">
-  <h3 style="color: #00aaff; font-size: 1.6rem; display: flex; align-items: center;">
-    <svg style="width: 32px; height: 32px; margin-right: 12px;" fill="#00aaff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm1 14h-2v-2h2v2zm0-4h-2V7h2v4z"/></svg>
-    Smart Contracts & Creator Wallets
-  </h3>
-  <ul style="line-height: 1.8; padding-left: 1.2rem;">
-    <li><strong style="color: #00aaff;">Creator Wallet Integration</strong> – Connect Ethereum-compatible wallets to assign and receive tokenized royalties from verified media.</li>
-    <li><strong style="color: #00aaff;">Automated Smart Contracts</strong> – Use programmable contracts to track usage, trigger royalty payments, or prove chain-of-ownership automatically.</li>
-    <li><strong style="color: #00aaff;">On-Chain Ledger of Attribution</strong> – Every capture is logged to a blockchain ledger, enabling permanent and verifiable authorship.</li>
-  </ul>
-</div>
 /* Tabs Navigation Styles */
 /* Tabs Navigation Styles */
 /* Tab Buttons Container */
@@ -53,7 +20,7 @@
   background: rgba(255, 255, 255, 0.08);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 1rem;
-  color: #fff;
+  color: #0b2447;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -117,4 +84,36 @@
   background-color: #00ccff;
   color: #000c1f;
   box-shadow: 0 0 16px #00ccff;
+}
+
+.source-citation {
+  color: #00aaff;
+}
+
+.parallax {
+  background-image: url('assets/image2.png');
+  min-height: 420px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.85);
+}
+
+.parallax-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.parallax h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.parallax p {
+  font-size: 1.5rem;
 }
