@@ -34,44 +34,43 @@
 /* Tabs Navigation Styles */
 /* Tabs Navigation Styles */
 /* Tab Buttons Container */
+/* --- Overwrite tab button styles for consistency and to suppress browser defaults --- */
+/* === Glassmorphism Tab Buttons Override === */
 .tab-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2em;
-  margin-top: 4em;
-  padding-bottom: 4em;
+  gap: 2rem;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-/* Force button styling and override default button behavior */
-.tab-buttons button {
-  all: unset;
-  display: block;
+.tab-button {
   font-size: 2.5rem;
-  font-weight: 700;
-  margin: 1rem 0;
+  font-weight: bold;
   padding: 1rem 2.5rem;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   cursor: pointer;
+  transition: all 0.3s ease;
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  width: fit-content;
 }
 
-.tab-buttons button:hover {
-  background: rgba(255, 255, 255, 0.2);
+.tab-button:hover {
+  background: rgba(255, 255, 255, 0.15);
   transform: scale(1.05);
-  color: #fff;
 }
 
-.tab-buttons button.active {
-  background: rgba(0, 123, 255, 0.25);
+.tab-button.active {
+  background: rgba(0, 123, 255, 0.2);
   border-color: rgba(0, 123, 255, 0.5);
 }
 
