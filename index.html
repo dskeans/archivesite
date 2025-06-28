@@ -1,140 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>arcHIVE</title>
-  <style>
-    body {
-      font-family: 'Futura', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to bottom, #f5f5f5 30%, #00bfff 30%);
-      color: white;
-      overflow-x: hidden;
-    }
-
-    #topBanner {
-      background-color: transparent;
-      color: black;
-      width: 100%;
-      padding: 40px 0;
-      text-align: center;
-      position: relative;
-    }
-
-    #hiveTitle {
-      font-size: 2.5rem;
-      font-weight: normal;
-      color: #002b5c;
-      position: relative;
-      z-index: 2;
-    }
-
-    #hiveTitle .ark {
-      position: absolute;
-      width: 75px;
-      height: 20px;
-      background: yellow;
-      border-radius: 100px;
-      transform: rotate(-10deg);
-      left: 50%;
-      top: 45px;
-      margin-left: -75px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-    }
-
-    .ocean-line {
-      position: absolute;
-      top: 100px;
-      left: 0;
-      width: 100%;
-      height: 150px;
-      background: linear-gradient(to right, #4DA8DA, #1e90ff, #4DA8DA);
-      clip-path: polygon(0 40%, 100% 0%, 100% 100%, 0% 100%);
-      z-index: 1;
-    }
-
-    .content {
-      padding-top: 200px;
-      text-align: center;
-      color: white;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .image-box {
-      max-width: 400px;
-      margin: 30px auto;
-      background-color: rgba(10, 25, 47, 0.85);
-      border: 2px solid #4DA8DA;
-      border-radius: 8px;
-      padding: 10px;
-    }
-
-    h2 {
-      color: #4DA8DA;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-    }
-
-    li {
-      margin: 10px 0;
-    }
-  </style>
-</head>
-<body>
-  <div id="topBanner">
-    <div id="hiveTitle">
-      <span style="font-weight: normal;">ARC</span><span style="font-weight: bold;">HIVE</span>
-      <div class="ark"></div>
-      <div style="margin-top: 40px; font-size: 1.1rem; color: #002b5c;">
-        <p style="margin: 0;">
-          Don’t let the past fade to black.<br>
-          Make it known it happened.<br>
-          And let the world see.
-        </p>
-      </div>
-    </div>
-    <div class="ocean-line"></div>
-  </div>
-
-  <div class="content">
-    <p style="color: #001f3f;">
-      arcHIVE is a decentralized platform for capturing, verifying, and tokenizing your most important audiovisual documents.
-      With blockchain-backed authenticity, IPFS storage, and a built-in camera UI, your media stays secure, traceable, and future-proof.
+<section style="display: flex; justify-content: space-between; align-items: stretch; text-align: left; margin-top: 80px;">
+  <div style="width: 48%; display: flex; flex-direction: column; justify-content: center;">
+    <h2 style="color: #001f3f;">Who It's For</h2>
+    <p>
+      arcHIVE is built for those who preserve, protect, and publish the truth. Whether you're archiving oral histories or capturing real-time video evidence, arcHIVE gives you cryptographic proof and decentralized permanence.
     </p>
-
-    <form style="margin-top: 20px;">
-      <input type="email" placeholder="Enter your email" required
-        style="padding: 10px; width: 70%; max-width: 300px; font-size: 1rem; border: none; border-radius: 4px;"/>
-      <button type="submit"
-        style="padding: 10px 20px; margin-left: 10px; font-size: 1rem; background-color: gold; border: none; border-radius: 4px; color: black; cursor: pointer;">
-        Sign Up
-      </button>
-    </form>
-
-    <section style="display: flex; justify-content: space-between; align-items: stretch; text-align: left; margin-top: 80px;">
-      <div style="width: 48%; display: flex; flex-direction: column; justify-content: center;">
-        <h2 style="color: #001f3f;">Who It's For</h2>
-        <p>
-          arcHIVE is built for those who preserve, protect, and publish the truth. Whether you're archiving oral histories or capturing real-time video evidence, arcHIVE gives you cryptographic proof and decentralized permanence.
-        </p>
-        <ul>
-          <li>📰 <strong>Journalists</strong> – to timestamp interviews, verify footage, and protect sources.</li>
-          <li>📚 <strong>Librarians & Archivists</strong> – to safeguard digital collections with blockchain verifiability.</li>
-          <li>🎥 <strong>Creators & Documentarians</strong> – to own and authenticate their original media.</li>
-          <li>🏛️ <strong>Museum Curators</strong> – to provide verifiable provenance for digital exhibits.</li>
-          <li>📂 <strong>Evidence Custodians</strong> – to ensure chain-of-custody and media integrity.</li>
-          <li>🎙️ <strong>Educators & Historians</strong> – to preserve first-person accounts in immutable form.</li>
-        </ul>
-        <p>If you care about what really happened — arcHIVE was built for you.</p>
-      </div>
-    </section>
+    <ul>
+      <li>📰 <strong>Journalists</strong> – to timestamp interviews, verify footage, and protect sources.</li>
+      <li>📚 <strong>Librarians & Archivists</strong> – to safeguard digital collections with blockchain verifiability.</li>
+      <li>🎥 <strong>Creators & Documentarians</strong> – to own and authenticate their original media.</li>
+      <li>🏛️ <strong>Museum Curators</strong> – to provide verifiable provenance for digital exhibits.</li>
+      <li>📂 <strong>Evidence Custodians</strong> – to ensure chain-of-custody and media integrity.</li>
+      <li>🎙️ <strong>Educators & Historians</strong> – to preserve first-person accounts in immutable form.</li>
+    </ul>
+    <p>If you care about what really happened — arcHIVE was built for you.</p>
   </div>
-</body>
-</html>
+
+  <div style="width: 48%; display: flex; align-items: center; justify-content: center;">
+    <img src="image.png" alt="arcHIVE Camera" style="max-width: 100%; height: auto;" />
+  </div>
+</section>
