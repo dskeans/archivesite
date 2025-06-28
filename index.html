@@ -1,1 +1,74 @@
-<!DOCTYPE html><html><head><title>arcHIVE</title></head><body>Full site with animation</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>arcHIVE</title>
+  <style>
+    body {
+      font-family: 'Futura', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #121212;
+      color: white;
+      margin: 0;
+      overflow: hidden;
+    }
+    #hiveTitle {
+      font-size: 2rem;
+      position: relative;
+      text-transform: uppercase;
+    }
+    #arcAnchor {
+      position: relative;
+      display: inline-block;
+    }
+    #arcAnimation {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 4px solid gold;
+      border-top-color: transparent;
+      top: -20px;
+      left: calc(100% + 10px);
+      animation: orbit 4s linear infinite;
+      pointer-events: none;
+      z-index: 2;
+    }
+    @keyframes orbit {
+      from {
+        transform: rotate(0deg) translateX(30px) rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg) translateX(30px) rotate(-360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="hiveTitle">
+    <span style="font-size: 1.2rem; text-transform: lowercase;">arch</span>
+    <span id="arcAnchor">
+      <span id="hiveText" style="font-size: 2.2rem;">HIVE</span>
+      <div id="arcAnimation"></div>
+    </span>
+  </div>
+  <div style="max-width: 600px; margin-top: 30px; text-align: center;">
+    <p style="font-size: 1.1rem; line-height: 1.5;">
+      arcHIVE is a decentralized platform for capturing, verifying, and tokenizing your most important audiovisual documents. 
+      With blockchain-backed authenticity, IPFS storage, and a built-in camera UI, your media stays secure, traceable, and future-proof.
+    </p>
+    <form style="margin-top: 20px;">
+      <input type="email" placeholder="Enter your email" required
+        style="padding: 10px; width: 70%; max-width: 300px; font-size: 1rem; border: none; border-radius: 4px;"/>
+      <button type="submit"
+        style="padding: 10px 20px; margin-left: 10px; font-size: 1rem; background-color: gold; border: none; border-radius: 4px; color: black; cursor: pointer;">
+        Sign Up
+      </button>
+    </form>
+  </div>
+</body>
+</html>
