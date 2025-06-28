@@ -10,11 +10,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      flex-direction: column;
+      padding-top: 0;
       background: #121212;
       color: white;
       margin: 0;
       overflow: hidden;
+    }
+    #topBanner {
+      background-color: white;
+      color: black;
+      width: 100%;
+      padding: 40px 0;
+      display: flex;
+      justify-content: center;
+      position: relative;
     }
     #hiveTitle {
       font-size: 2rem;
@@ -49,11 +59,13 @@
   </style>
 </head>
 <body>
-  <div id="hiveTitle" style="position: relative; display: flex; align-items: center; justify-content: center;">
-    <div id="arcAnimation"></div>
-    <div style="position: absolute; text-align: center;">
-      <span style="font-size: 1.2rem; text-transform: uppercase;">arch</span>
-      <span style="font-size: 2.2rem;">HIVE</span>
+  <div id="topBanner">
+    <div id="hiveTitle" style="position: relative; text-align: center;">
+      <div id="arcAnimation"></div>
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <span style="font-size: 1.2rem; text-transform: uppercase;">arch</span>
+        <span style="font-size: 2.2rem;">HIVE</span>
+      </div>
     </div>
   </div>
   <div style="max-width: 600px; margin-top: 30px; text-align: center;">
